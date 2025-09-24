@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import type { TCourse } from "@/types/Course";
+import type { TCertification } from "@/types/Certification";
 
-const certificates: TCourse[] = [
+const certificates: TCertification[] = [
   { id: "1", title: "React", description: "Frontend Library", provider: "Meta", level: "Intermediate" },
   { id: "2", title: "Next.js", description: "React Framework", provider: "Vercel", level: "Advanced" },
   { id: "3", title: "Node.js", description: "Backend Framework", provider: "Node.js Foundation", level: "Intermediate" },

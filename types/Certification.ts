@@ -1,4 +1,4 @@
-export type TCourse = {
+export type TCertification = {
   id: string;
   title: string;
   description: string;

@@ -4,6 +4,6 @@ export type TQuiz = {
     id: string;
     title: string;
     description: string;
-    course_id: string;
+    certification_id: string;
     questions: TQuestion[];
 }
