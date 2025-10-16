@@ -3,8 +3,9 @@ import type { NextRequest } from "next/server";
 import type { TCertification } from "@/types/Certification";
 
 const certificates: TCertification[] = [
-  { id: "1", title: "React", description: "Frontend Library", provider: "Meta", level: "Intermediate" },
-  { id: "2", title: "Next.js", description: "React Framework", provider: "Vercel", level: "Advanced" },
+  { id: "aws-cloud-practitioner", title: "AWS Certified Cloud Practitioner", description: "AWS Certification", provider: "Amazon", level: "Foundational" },
+  { id: "aws-developer-associate", title: "AWS Certified Developer", description: "AWS Certification", provider: "Amazon", level: "Associate" },
+  { id: "azure-developer", title: "Azure Developer", description: "Cloud Development", provider: "Microsoft", level: "Advanced" },
   { id: "3", title: "Node.js", description: "Backend Framework", provider: "Node.js Foundation", level: "Intermediate" },
 ];
 

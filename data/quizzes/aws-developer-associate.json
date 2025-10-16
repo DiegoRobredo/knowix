@@ -1,0 +1,128 @@
+{
+    "id": "quiz-aws-developer",
+    "title": "AWS Certified Developer – Practice Quiz",
+    "description": "Práctica con preguntas de nivel associate para el examen AWS Certified Developer.",
+    "certification_id": "aws-developer",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "¿Qué servicio de AWS se recomienda para almacenar credenciales y parámetros de configuración de manera segura?",
+            "module": "Security",
+            "explanation": "AWS Secrets Manager permite almacenar y rotar credenciales de manera segura.",
+            "options": [
+                { "id": "q1o1", "question_id": "q1", "text": "AWS Secrets Manager", "is_correct": true },
+                { "id": "q1o2", "question_id": "q1", "text": "AWS KMS", "is_correct": false },
+                { "id": "q1o3", "question_id": "q1", "text": "AWS Systems Manager Parameter Store", "is_correct": false },
+                { "id": "q1o4", "question_id": "q1", "text": "Amazon Cognito", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q2",
+            "text": "¿Qué patrón de diseño se recomienda al usar Amazon SQS para desacoplar microservicios?",
+            "module": "Integration",
+            "explanation": "El patrón product-consumer con colas desacopla productores de consumidores.",
+            "options": [
+                { "id": "q2o1", "question_id": "q2", "text": "Productor-Consumidor", "is_correct": true },
+                { "id": "q2o2", "question_id": "q2", "text": "Peer-to-Peer", "is_correct": false },
+                { "id": "q2o3", "question_id": "q2", "text": "Pub/Sub directo", "is_correct": false },
+                { "id": "q2o4", "question_id": "q2", "text": "Shared Database", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q3",
+            "text": "¿Qué servicio usarías para implementar un API RESTful sin administrar servidores?",
+            "module": "API",
+            "explanation": "Amazon API Gateway permite exponer APIs REST o WebSocket de forma serverless.",
+            "options": [
+                { "id": "q3o1", "question_id": "q3", "text": "Amazon CloudFront", "is_correct": false },
+                { "id": "q3o2", "question_id": "q3", "text": "Amazon API Gateway", "is_correct": true },
+                { "id": "q3o3", "question_id": "q3", "text": "AWS AppSync", "is_correct": false },
+                { "id": "q3o4", "question_id": "q3", "text": "Amazon Route 53", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q4",
+            "text": "¿Qué servicio facilita implementar un pipeline de CI/CD en AWS?",
+            "module": "DevOps",
+            "explanation": "AWS CodePipeline permite automatizar el ciclo de entrega de software.",
+            "options": [
+                { "id": "q4o1", "question_id": "q4", "text": "AWS CodePipeline", "is_correct": true },
+                { "id": "q4o2", "question_id": "q4", "text": "AWS CloudFormation", "is_correct": false },
+                { "id": "q4o3", "question_id": "q4", "text": "AWS Config", "is_correct": false },
+                { "id": "q4o4", "question_id": "q4", "text": "Amazon S3", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q5",
+            "text": "¿Qué base de datos NoSQL de AWS es totalmente administrada y escala automáticamente?",
+            "module": "Database",
+            "explanation": "Amazon DynamoDB es NoSQL, administrada y altamente escalable.",
+            "options": [
+                { "id": "q5o1", "question_id": "q5", "text": "Amazon Aurora", "is_correct": false },
+                { "id": "q5o2", "question_id": "q5", "text": "Amazon RDS", "is_correct": false },
+                { "id": "q5o3", "question_id": "q5", "text": "Amazon DynamoDB", "is_correct": true },
+                { "id": "q5o4", "question_id": "q5", "text": "Amazon Redshift", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q6",
+            "text": "¿Qué servicio permite desplegar directamente desde un repositorio de código en AWS?",
+            "module": "DevOps",
+            "explanation": "AWS CodeDeploy automatiza despliegues desde repositorios como CodeCommit o GitHub.",
+            "options": [
+                { "id": "q6o1", "question_id": "q6", "text": "AWS CodeCommit", "is_correct": false },
+                { "id": "q6o2", "question_id": "q6", "text": "AWS CodeDeploy", "is_correct": true },
+                { "id": "q6o3", "question_id": "q6", "text": "AWS CodeBuild", "is_correct": false },
+                { "id": "q6o4", "question_id": "q6", "text": "AWS Lambda", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q7",
+            "text": "¿Qué servicio de AWS facilita la autenticación de usuarios en aplicaciones web y móviles?",
+            "module": "Security",
+            "explanation": "Amazon Cognito permite gestionar usuarios, federar identidades y autenticación.",
+            "options": [
+                { "id": "q7o1", "question_id": "q7", "text": "AWS IAM", "is_correct": false },
+                { "id": "q7o2", "question_id": "q7", "text": "Amazon Cognito", "is_correct": true },
+                { "id": "q7o3", "question_id": "q7", "text": "AWS Secrets Manager", "is_correct": false },
+                { "id": "q7o4", "question_id": "q7", "text": "AWS KMS", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q8",
+            "text": "¿Cuál es la mejor práctica para manejar fallos transitorios en llamadas a AWS SDK?",
+            "module": "Best Practices",
+            "explanation": "Implementar exponential backoff con retries es la mejor práctica.",
+            "options": [
+                { "id": "q8o1", "question_id": "q8", "text": "Reintentar inmediatamente", "is_correct": false },
+                { "id": "q8o2", "question_id": "q8", "text": "Exponential backoff", "is_correct": true },
+                { "id": "q8o3", "question_id": "q8", "text": "Ignorar errores", "is_correct": false },
+                { "id": "q8o4", "question_id": "q8", "text": "Reintento infinito sin delay", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q9",
+            "text": "¿Qué servicio permite ejecutar funciones en respuesta a eventos de DynamoDB o S3?",
+            "module": "Compute",
+            "explanation": "AWS Lambda se integra con DynamoDB Streams y S3 events para ejecutar funciones.",
+            "options": [
+                { "id": "q9o1", "question_id": "q9", "text": "Amazon EC2", "is_correct": false },
+                { "id": "q9o2", "question_id": "q9", "text": "AWS Lambda", "is_correct": true },
+                { "id": "q9o3", "question_id": "q9", "text": "AWS Fargate", "is_correct": false },
+                { "id": "q9o4", "question_id": "q9", "text": "Amazon CloudWatch", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q10",
+            "text": "¿Qué servicio facilita la infraestructura como código en AWS?",
+            "module": "IaC",
+            "explanation": "AWS CloudFormation permite modelar y aprovisionar infraestructura como código.",
+            "options": [
+                { "id": "q10o1", "question_id": "q10", "text": "AWS Config", "is_correct": false },
+                { "id": "q10o2", "question_id": "q10", "text": "AWS CloudFormation", "is_correct": true },
+                { "id": "q10o3", "question_id": "q10", "text": "AWS CloudTrail", "is_correct": false },
+                { "id": "q10o4", "question_id": "q10", "text": "AWS Trusted Advisor", "is_correct": false }
+            ]
+        }
+    ]
+}

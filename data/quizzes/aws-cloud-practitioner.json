@@ -1,0 +1,128 @@
+{
+    "id": "quiz-aws-cloud-practitioner",
+    "title": "AWS Certified Cloud Practitioner – Practice Quiz",
+    "description": "Práctica con preguntas de nivel foundational para el examen AWS Certified Cloud Practitioner.",
+    "certification_id": "aws-cloud-practitioner",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "¿Qué servicio de AWS se utiliza para ejecutar aplicaciones sin tener que administrar servidores?",
+            "module": "Compute",
+            "explanation": "AWS Lambda permite ejecutar código sin aprovisionar ni administrar servidores.",
+            "options": [
+                { "id": "q1o1", "question_id": "q1", "text": "Amazon EC2", "is_correct": false },
+                { "id": "q1o2", "question_id": "q1", "text": "AWS Lambda", "is_correct": true },
+                { "id": "q1o3", "question_id": "q1", "text": "Amazon ECS", "is_correct": false },
+                { "id": "q1o4", "question_id": "q1", "text": "AWS Elastic Beanstalk", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q2",
+            "text": "¿Cuál es la ventaja principal de la nube frente a un data center on-premise?",
+            "module": "Cloud Concepts",
+            "explanation": "La nube ofrece escalabilidad bajo demanda y pago por uso.",
+            "options": [
+                { "id": "q2o1", "question_id": "q2", "text": "Mayor costo fijo", "is_correct": false },
+                { "id": "q2o2", "question_id": "q2", "text": "Pago por uso", "is_correct": true },
+                { "id": "q2o3", "question_id": "q2", "text": "Más latencia", "is_correct": false },
+                { "id": "q2o4", "question_id": "q2", "text": "Menor seguridad", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q3",
+            "text": "¿Qué servicio de AWS proporciona almacenamiento de objetos?",
+            "module": "Storage",
+            "explanation": "Amazon S3 es el servicio de almacenamiento de objetos en AWS.",
+            "options": [
+                { "id": "q3o1", "question_id": "q3", "text": "Amazon EBS", "is_correct": false },
+                { "id": "q3o2", "question_id": "q3", "text": "Amazon S3", "is_correct": true },
+                { "id": "q3o3", "question_id": "q3", "text": "Amazon EFS", "is_correct": false },
+                { "id": "q3o4", "question_id": "q3", "text": "AWS Storage Gateway", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q4",
+            "text": "¿Cuál de los siguientes servicios es un servicio de base de datos administrado?",
+            "module": "Database",
+            "explanation": "Amazon RDS permite implementar bases de datos administradas como MySQL o PostgreSQL.",
+            "options": [
+                { "id": "q4o1", "question_id": "q4", "text": "Amazon RDS", "is_correct": true },
+                { "id": "q4o2", "question_id": "q4", "text": "Amazon EC2", "is_correct": false },
+                { "id": "q4o3", "question_id": "q4", "text": "AWS IAM", "is_correct": false },
+                { "id": "q4o4", "question_id": "q4", "text": "AWS CloudTrail", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q5",
+            "text": "¿Qué servicio de AWS se usa para controlar acceso a recursos?",
+            "module": "Security",
+            "explanation": "AWS Identity and Access Management (IAM) gestiona usuarios, roles y permisos.",
+            "options": [
+                { "id": "q5o1", "question_id": "q5", "text": "AWS Shield", "is_correct": false },
+                { "id": "q5o2", "question_id": "q5", "text": "AWS IAM", "is_correct": true },
+                { "id": "q5o3", "question_id": "q5", "text": "Amazon GuardDuty", "is_correct": false },
+                { "id": "q5o4", "question_id": "q5", "text": "AWS Config", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q6",
+            "text": "¿Qué herramienta de AWS ayuda a estimar costos antes de desplegar servicios?",
+            "module": "Billing",
+            "explanation": "AWS Pricing Calculator permite estimar costos de los servicios.",
+            "options": [
+                { "id": "q6o1", "question_id": "q6", "text": "AWS Cost Explorer", "is_correct": false },
+                { "id": "q6o2", "question_id": "q6", "text": "AWS Trusted Advisor", "is_correct": false },
+                { "id": "q6o3", "question_id": "q6", "text": "AWS Pricing Calculator", "is_correct": true },
+                { "id": "q6o4", "question_id": "q6", "text": "AWS Budgets", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q7",
+            "text": "¿Qué modelo de responsabilidad comparte AWS con el cliente?",
+            "module": "Security",
+            "explanation": "AWS tiene el modelo de seguridad compartida: AWS asegura la nube, el cliente asegura lo que pone en la nube.",
+            "options": [
+                { "id": "q7o1", "question_id": "q7", "text": "Responsabilidad única del cliente", "is_correct": false },
+                { "id": "q7o2", "question_id": "q7", "text": "Modelo de responsabilidad compartida", "is_correct": true },
+                { "id": "q7o3", "question_id": "q7", "text": "Responsabilidad única de AWS", "is_correct": false },
+                { "id": "q7o4", "question_id": "q7", "text": "Ninguna de las anteriores", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q8",
+            "text": "¿Qué servicio permite distribuir contenido globalmente con baja latencia?",
+            "module": "Networking",
+            "explanation": "Amazon CloudFront es la CDN de AWS para distribuir contenido globalmente.",
+            "options": [
+                { "id": "q8o1", "question_id": "q8", "text": "Amazon Route 53", "is_correct": false },
+                { "id": "q8o2", "question_id": "q8", "text": "AWS Global Accelerator", "is_correct": false },
+                { "id": "q8o3", "question_id": "q8", "text": "Amazon CloudFront", "is_correct": true },
+                { "id": "q8o4", "question_id": "q8", "text": "Amazon VPC", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q9",
+            "text": "¿Qué servicio permite monitorear métricas y crear alarmas?",
+            "module": "Monitoring",
+            "explanation": "Amazon CloudWatch recolecta métricas y permite configurar alarmas.",
+            "options": [
+                { "id": "q9o1", "question_id": "q9", "text": "AWS Config", "is_correct": false },
+                { "id": "q9o2", "question_id": "q9", "text": "Amazon CloudWatch", "is_correct": true },
+                { "id": "q9o3", "question_id": "q9", "text": "AWS CloudTrail", "is_correct": false },
+                { "id": "q9o4", "question_id": "q9", "text": "AWS Trusted Advisor", "is_correct": false }
+            ]
+        },
+        {
+            "id": "q10",
+            "text": "¿Qué servicio permite gestionar y escalar contenedores Docker?",
+            "module": "Compute",
+            "explanation": "Amazon ECS es un servicio de orquestación de contenedores en AWS.",
+            "options": [
+                { "id": "q10o1", "question_id": "q10", "text": "Amazon S3", "is_correct": false },
+                { "id": "q10o2", "question_id": "q10", "text": "Amazon ECS", "is_correct": true },
+                { "id": "q10o3", "question_id": "q10", "text": "Amazon VPC", "is_correct": false },
+                { "id": "q10o4", "question_id": "q10", "text": "AWS Config", "is_correct": false }
+            ]
+        }
+    ]
+}
