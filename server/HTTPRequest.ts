@@ -1,11 +1,14 @@
 import axios from "axios";
 import { rootEndpoint } from "@/libs/endpoints";
 
-const httpRequest = {
-  get: async function <T>(url: string): Promise<T> {
-    const response = await axios.get(`${rootEndpoint}${url}`);
+export class HttpRequest {
+  async get<T>(url: string): Promise<T> {
+    const response = await axios.get(url);
     return response.data;
   }
-};
 
-export default httpRequest;
+  async post<T>(url: string, body: unknown): Promise<T> {
+    const response = await axios.post(url, body);
+    return response.data;
+  }
+}

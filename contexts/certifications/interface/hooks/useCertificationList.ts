@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { TCertification } from "@/types/Certification";
-import { fetchAllCertifications } from "@/certifications/application/getAllCertifications";
+import { getAllCertifications } from "@/certifications/interface/facade";
 
 export function useCertificationList() {
   const [certifications, setCertifications] = useState<TCertification[]>([]);
@@ -12,7 +12,7 @@ export function useCertificationList() {
   useEffect(() => {
     const fetchCertifications = async () => {
       try {
-        const response: TCertification[] = await fetchAllCertifications();
+        const response: TCertification[] = await getAllCertifications();
         setCertifications(response);
       } catch (error) {
         setError(error as Error);
